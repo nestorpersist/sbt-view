@@ -6,7 +6,7 @@ for the current project or its dependencies.
 
 1. In project/plugins.sbt add
 
-     addSbtPlugin("com.persist" % "sbt-view" % "1.0.0")
+     `addSbtPlugin("com.persist" % "sbt-view" % "1.0.0")`
 
 2. In build.sbt add
 
@@ -19,12 +19,12 @@ for the current project or its dependencies.
 
 4. View Scaladoc for current project. Calls doc if none there.
 
-             `view`
+    `view`
 5. Finds an item in the classpath where all words are matched.
            Unpack the javadoc jar (if not already done) in the ivy2
            cache and then view it.
 
-             `view WORD1 WORD2 ...`
+    `view WORD1 WORD2 ...`
 
 Note: The browser window opens automatically only on OSX.
 
