@@ -1,0 +1,13 @@
+*.iml
+*.log.gz
+*.sc
+.DS_Store
+target/
+.project
+.idea*
+/project.plugins/project
+ca.log
+reports/
+target/
+*.orig
+log/
