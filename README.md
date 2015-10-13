@@ -19,11 +19,10 @@ for the current project or its dependencies.
 
 4. You can now use the new sbt view command
 
-        a. View Scaladoc for current project. Calls doc if none there.
+a. View Scaladoc for current project. Calls doc if none there.
 
              view
-
-        b. Finds an item in the classpath where all words are matched.
+b. Finds an item in the classpath where all words are matched.
            Unpack the javadoc jar (if not already done) in the ivy2
            cache and then view it.
 
