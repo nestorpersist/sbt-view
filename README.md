@@ -17,12 +17,10 @@ for the current project or its dependencies.
 
     "com.foo" %% "foopackage" % "1.2.3" withJavadoc()
 
-4. You can now use the new sbt view command
-
-*. View Scaladoc for current project. Calls doc if none there.
+4. View Scaladoc for current project. Calls doc if none there.
 
              view
-*. Finds an item in the classpath where all words are matched.
+5. Finds an item in the classpath where all words are matched.
            Unpack the javadoc jar (if not already done) in the ivy2
            cache and then view it.
 
