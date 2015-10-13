@@ -30,7 +30,7 @@ Note: The browser window opens automatically only on OSX.
 
 The plugin is based on a plugin developed by Whitepages
 
-  [https://github.com/whitepages/WP_Sbt_Plugins](https://github.com/whitepages/WP_Sbt_Plugins)
+          [https://github.com/whitepages/WP_Sbt_Plugins](https://github.com/whitepages/WP_Sbt_Plugins)
 
 Development of this plugin was supported by [47 Degrees](http://www.47deg.com/).
 
