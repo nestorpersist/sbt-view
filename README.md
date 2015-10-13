@@ -4,7 +4,7 @@ for the current project or its dependencies.
 
 1. In project/plugins.sbt add
 
-     addSbtPlugin("com.persist" % "sbt-view" % "0.0.4")
+     addSbtPlugin("com.persist" % "sbt-view" % "1.0.0")
 
 2. In build.sbt add
 
@@ -29,8 +29,10 @@ for the current project or its dependencies.
 
 Note: The browser window opens automatically only on OSX.
 
-Based on Whitepages
+The plugin is based on a plugin developed by Whitepages
 
-Supported by 47 Degrees.
+(https://github.com/whitepages/WP_Sbt_Plugins)[https://github.com/whitepages/WP_Sbt_Plugins]
+
+Development of this plugin was supported by (47 Degrees)[http://www.47deg.com/].
 
 
