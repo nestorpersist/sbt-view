@@ -1,3 +1,5 @@
+# Scaladoc/JavaDoc Viewer SBT Plugin
+
 Opens a browser window with Javadoc/Scaladoc
 for the current project or its dependencies.
 
