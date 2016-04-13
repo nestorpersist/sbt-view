@@ -6,7 +6,7 @@ for the current project or its dependencies.
 
 1. In project/plugins.sbt add
 
-     `addSbtPlugin("com.persist" % "sbt-view" % "1.0.0")`
+     `addSbtPlugin("com.persist" % "sbt-view" % "1.0.1")`
 
 2. In build.sbt add
 
@@ -25,8 +25,6 @@ for the current project or its dependencies.
            cache and then view it.
 
     `view WORD1 WORD2 ...`
-
-Note: The browser window opens automatically only on OSX.
 
 The plugin is based on a plugin developed by Whitepages [https://github.com/whitepages/WP_Sbt_Plugins](https://github.com/whitepages/WP_Sbt_Plugins)
 
