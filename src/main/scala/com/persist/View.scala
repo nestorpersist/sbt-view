@@ -12,6 +12,8 @@ object View extends Plugin {
 
   private case class pinfo(path: String, prefix: String, ver: String, pack: String, id: String)
 
+  private val osName = System.getProperty("os.name").toLowerCase()
+
   private def parsePath(path: String) = {
     val i = path.replace("-SNAPSHOT", "*SNAPSHOT").lastIndexOf("-")
     val j = path.replace("/bundles/", "/jars/").indexOf("/jars/")
@@ -24,7 +26,11 @@ object View extends Plugin {
   }
 
   private def open(path: String): Unit = {
-    s"open $path".!
+    val cmd = osName match {
+      case "linux" => "xdg-open"
+      case _ => "open"
+    }
+    s"$cmd $path".!
     println(s"opening browser window for $path")
   }
 
@@ -58,7 +64,11 @@ object View extends Plugin {
         if (!outf.exists) {
           if (inf.exists) {
             outf.mkdir()
-            s"tar -xf $in -C $out".!
+            val cmd = osName match {
+              case "linux" => s"unzip $in -d $out"
+              case _ => s"tar -xf $in -C $out"
+            }
+            cmd.!
           } else {
             println(s"${in} not present")
           }
@@ -75,7 +85,7 @@ object View extends Plugin {
 
   val view1 = view := {
     val args = spaceDelimited("<arg>").parsed
-    val cp = (dependencyClasspath in Runtime).value
+    val cp = (dependencyClasspath in Runtime).value ++ (dependencyClasspath in Test).value ++ (dependencyClasspath in Compile).value
     def genDoc():Unit  = (doc in Compile).value
     val sver = scalaVersion.value
     val sver1 = sver.split("[.]").dropRight(1).mkString(".")
