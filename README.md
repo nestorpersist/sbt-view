@@ -1,7 +1,5 @@
 # Scaladoc/JavaDoc Viewer SBT Plugin
 
-[![Latest version](https://index.scala-lang.org/nestorpersist/sbt-view/sbt-view/latest.svg)](https://index.scala-lang.org/nestorpersist/sbt-view/sbt-view)
-
 Opens a browser window with Javadoc/Scaladoc
 for the current project or its dependencies.
 
