@@ -1,12 +1,18 @@
 # Scaladoc/JavaDoc Viewer SBT Plugin
 
+[![Maven Central](https://img.shields.io/maven-central/v/com.persist/sbt-view.svg)](https://maven-badges.herokuapp.com/maven-central/com.persist/sbt-view)
+
 Opens a browser window with Javadoc/Scaladoc
 for the current project or its dependencies.
 
 
 1. In project/plugins.sbt add
 
+<<<<<<< HEAD
      `addSbtPlugin("com.persist" % "sbt-view" % "1.0.2")`
+=======
+     `addSbtPlugin("com.persist" % "sbt-view" % "1.0.1")`
+>>>>>>> 8cb09db23cdaa9b4387a433c66fc034790dc400b
 
 2. In build.sbt add
 
