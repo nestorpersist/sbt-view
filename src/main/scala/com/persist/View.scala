@@ -89,7 +89,7 @@ object View extends Plugin {
     def genDoc():Unit  = (doc in Compile).value
     val sver = scalaVersion.value
     val sver1 = sver.split("[.]").dropRight(1).mkString(".")
-    viewAct(args, cp, sver1, genDoc)
+    viewAct(args, cp.distinct, sver1, genDoc)
   }
 
   lazy val viewSettings = Seq(view1)
