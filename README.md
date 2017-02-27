@@ -8,11 +8,7 @@ for the current project or its dependencies.
 
 1. In project/plugins.sbt add
 
-<<<<<<< HEAD
      `addSbtPlugin("com.persist" % "sbt-view" % "1.0.2")`
-=======
-     `addSbtPlugin("com.persist" % "sbt-view" % "1.0.1")`
->>>>>>> 8cb09db23cdaa9b4387a433c66fc034790dc400b
 
 2. In build.sbt add
 
